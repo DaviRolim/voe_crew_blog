@@ -1,0 +1,63 @@
+news_research_task:
+  description: >
+    Conduza uma pesquisa focada sobre as últimas notícias e desenvolvimentos na indústria
+    de viagens aéreas, relevantes para viajantes brasileiros. Concentre-se em {topic_of_interest}
+    para o ano {current_year}, considerando o contexto brasileiro. Selecione as informações
+    mais pertinentes e interessantes que possam ser incorporadas em um único artigo de blog.
+    Priorize dados estatísticos recentes, tendências emergentes e informações que agreguem
+    valor real ao leitor brasileiro.
+  expected_output: >
+    Um resumo conciso das principais notícias e atualizações do setor de viagens aéreas,
+    relevantes para o tema do blog, incluindo estatísticas atuais e tendências emergentes.
+
+travel_tips_curation_task:
+  description: >
+    Selecione um conjunto específico de dicas de viagem práticas e acionáveis relacionadas a
+    {topic_of_interest} que sejam particularmente úteis para viajantes brasileiros. Identifique
+    os pontos problemáticos e preocupações mais relevantes e desenvolva conteúdo conciso que
+    aborde essas questões de maneira útil e envolvente. Foque em dicas exclusivas ou pouco
+    conhecidas que possam surpreender positivamente o leitor.
+  expected_output: >
+    Uma lista curada de 5-7 dicas de viagem relevantes e práticas, organizadas por ordem
+    de importância ou cronologia de uso durante a viagem.
+
+how_to_guide_creation_task:
+  description: >
+    Crie um guia conciso e detalhado que eduque os viajantes brasileiros sobre um aspecto
+    específico da experiência de viagem aérea relacionado a {topic_of_interest}. Foque em
+    informações relevantes para o contexto brasileiro, como documentação necessária ou
+    particularidades de aeroportos populares. Forneça instruções claras e acionáveis,
+    priorizando informações que não sejam facilmente encontradas em outras fontes.
+  expected_output: >
+    Um guia passo a passo com 3-5 etapas principais, cada uma com uma breve explicação
+    e dicas práticas, adequado para inclusão no post do blog.
+
+blog_post_creation_task:
+  description: >
+    Crie uma postagem de blog envolvente e informativa sobre {topic_of_interest} para
+    viajantes brasileiros. Integre os elementos de pesquisa de notícias, dicas de viagem
+    e o guia prático fornecidos pelas tarefas anteriores. Identifique e incorpore uma
+    história pessoal de um viajante brasileiro que se relacione com o tema, usando-a como
+    um elemento narrativo ao longo do post. Assegure-se de que o post seja visualmente
+    atraente, bem estruturado e fácil de ler, incorporando informações úteis e atualizadas
+    para o ano {current_year}. Use um tom conversacional e amigável, apropriado para o
+    público brasileiro.
+
+    Sempre adicione uma imagem abaixo do título do blog que tenha uma representação visual do assunto do blog.
+    Para isso você pode usar a ferramenta DALL-E, que recebe como parametro uma string que contém a descrição d imagem e 
+    retorna o URL da imagem e você pode adicionar a imagem na saída do markdown assim: ![image](image_url)
+  expected_output: >
+    Um post de blog completo em markdown usando portugues do Brasil, pronto para publicação, que integre todas as informações
+    coletadas em um artigo coeso e envolvente.
+    Você DEVE adicionar pelo menos uma imagem, abaixo do título do blog.
+    As outras imagens são opcionais, mas se fizer sentido você também pode adicioná-las.
+    # CABEÇALHO DO TÍTULO DO BLOG
+    Imagem
+    
+    ## SEÇÃO 1
+    <Conteúdo>
+    
+    ## SEÇÃO 2
+    <Conteúdo>
+    
+    <MAIS SEÇÕES...>
